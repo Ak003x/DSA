@@ -6,7 +6,7 @@
 // ];
 
 // for (let row = 0; row < arr.length; row++) {
-//   for (let col = 0; col < arr[row].length; col++) {
+//   for (let col = 0; col < arr[row]. length; col++) {
 //     console.log(arr[row][col]);
 //   }
 // }
@@ -30,3 +30,5 @@
 
 // console.log(arr2);
 // console.log(arr1);
+
+
