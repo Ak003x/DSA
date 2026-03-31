@@ -33,14 +33,79 @@
 
 //? Q3: Two sums with brute force
 
-function twoSums(nums, target) {
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (nums[i] + nums[j] === target) {
-        return [i, j];
-      }
-    }
-  }
-}
+// function twoSums(nums, target) {
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = i + 1; j < nums.length; j++) {
+//       if (nums[i] + nums[j] === target) {
+//         return [i, j];
+//       }
+//     }
+//   }
+// }
 
-console.log(twoSums([1, 2, 5, 4], 9));
+// console.log(twoSums([1, 2, 5, 4], 9));
+
+//? Q3: Two sums with HaspMap
+
+// const twoSums = (nums, target) => {
+//   let map = {};
+
+//   for (let i = 0; i < nums.length; i++) {
+//     let complement = target - nums[i];
+
+//     if (map[complement] !== undefined) {
+//       return [map[complement], i];
+//     }
+//     map[nums[i]] = i;
+//   }
+// };
+
+// console.log(twoSums([1, 2, 3, 4, 5], 9));
+
+//? Q4: Reverse the string
+
+// const Reverse = (str) => {
+//   let result = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     result += str[i];
+//   }
+//   return result;
+// };
+
+// console.log(Reverse("Hello"));
+
+//? with builtin function
+
+// function reverseString(str) {
+//   return str.split("").reverse().join("");
+// }
+// console.log(reverseString("Akash"));
+
+//? Q4: Palindrome with builtin function
+
+// function isPalindrome(str) {
+//   let reversed = str.split("").reverse().join("");
+
+//   if (str === reversed) {
+//     return `${str} is:${str === reversed}`;
+//   } else {
+//     return `${str} is:${str === reversed}`;
+//   }
+// }
+
+// console.log(isPalindrome("madam"));
+
+//? Q5: Palindrome without builtin function
+
+// function isPalindrome(value) {
+//   let str = "" + value;
+
+//   for (let i = 0; i < str.length / 2; i++) {
+//     if (str[i] !== str[str.length - 1 - i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(isPalindrome("11211"));
