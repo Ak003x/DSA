@@ -109,3 +109,89 @@
 // }
 
 // console.log(isPalindrome("11211"));
+
+//? Q6: return second largest number - builtin
+
+// function secLarge(arr) {
+//   arr.sort((a, b) => b - a);
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== arr[0]) {
+//       return arr[i];
+//     }
+//   }
+//   return null;
+// }
+
+// console.log(secLarge([1, 45, 20, 22, 18, 60, 60]));
+
+//? without builtin
+
+// function secLarge(arr) {
+//   let largest = -Infinity;
+//   let secondLargest = -Infinity;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > largest) {
+//       secondLargest = largest;
+//       largest = arr[i];
+//     } else if (arr[i] > secondLargest && arr[i] !== largest) {
+//       secondLargest = arr[i];
+//     }
+//   }
+//   return secondLargest;
+// }
+
+// console.log(secLarge([1, 12, 2, 5, 6, 10, 12, 45, 16, 10]));
+
+//? Q7 remove the duplicate values
+
+// function removeDuc(arr) {
+//   let seen = {};
+//   let result = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (seen[arr[i]] === undefined) {
+//       result.push(arr[i]);
+
+//       seen[arr[i]] = true;
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(removeDuc([1, 2, 3, 3, 3, 4, 5, 6, 7, 7]));
+
+//? with builtin
+
+// function removeDuc(arr) {
+//   let result = [];
+
+//   for (i = 0; i < arr.length; i++) {
+//     if (result.indexOf(arr[i]) === -1) {
+//       result.push(arr[i]);
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(removeDuc([1, 2, 3, 4, 5, 9,5, 5, 7, 7, 8]));
+
+//? Q7: Fibonacci series
+
+function Fibonacci(n) {
+  let a = 0;
+  let b = 1;
+  let result = [a];
+
+  for (let i = 0; i < n; i++) {
+    result.push(b);
+
+    let next = a + b;
+    a = b;
+    b = next;
+  }
+  return result;
+}
+console.log(Fibonacci(10));
