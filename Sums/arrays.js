@@ -195,3 +195,24 @@
 //   return result;
 // }
 // console.log(Fibonacci(10));
+
+//? Q8: Swap two variable without using 3rd variable
+
+// let a = 10;                                         //^ one way of doing using destructing
+// let b = 5;
+
+// [a, b] = [b, a];
+
+// console.log("a:", a, "b:", b);
+
+//? B:
+let a = 30; //^ other way of doing swap
+let b = 50;
+
+a = a + b;
+console.log(a);
+
+b = a - b;
+console.log(b);
+a = a - b;
+console.log(a);
