@@ -180,18 +180,18 @@
 
 //? Q7: Fibonacci series
 
-function Fibonacci(n) {
-  let a = 0;
-  let b = 1;
-  let result = [a];
+// function Fibonacci(n) {
+//   let a = 0;
+//   let b = 1;
+//   let result = [a];
 
-  for (let i = 0; i < n; i++) {
-    result.push(b);
+//   for (let i = 0; i < n; i++) {
+//     result.push(b);
 
-    let next = a + b;
-    a = b;
-    b = next;
-  }
-  return result;
-}
-console.log(Fibonacci(10));
+//     let next = a + b;
+//     a = b;
+//     b = next;
+//   }
+//   return result;
+// }
+// console.log(Fibonacci(10));
