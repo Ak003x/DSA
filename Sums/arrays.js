@@ -211,7 +211,6 @@ let b = 50;
 
 a = a + b;
 console.log(a);
-
 b = a - b;
 console.log(b);
 a = a - b;
