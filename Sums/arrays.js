@@ -206,7 +206,7 @@
 // console.log("a:", a, "b:", b);
 
 //? B:
-let a = 30; //^ other way of doing swap
+let a = 30;                                            //^ other way of doing swap
 let b = 50;
 
 a = a + b;
