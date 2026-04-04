@@ -219,14 +219,43 @@
 
 //? Q8: pattern program that takes n as input and prints an alphabet pattern
 
-function patternProgram(n) {
-  for (let i = n; i >= 1; i--) {
-    row = "";
-    for (j = 0; j < i; j++) {
-      row += String.fromCharCode(97 + j);
-    }
-    console.log(row);
-  }
-}
+// function patternProgram(n) {
+//   for (let i = n.length; i >= 1; i--) {
+//     row = "";
+//     for (j = 0; j < i; j++) {
+//       row += n[j];
+//        row += String.fromCharCode(97 + j); //^ with using build in func
+//     }
+//     console.log(row);
+//   }
+// }
 
-patternProgram(5);
+// patternProgram("Akash");
+
+//? By Using the "*"
+
+// function starPattern(n) {
+//   for (let i = n; i >= 1; i--) {
+//     row = "";
+//     for (let j = 0; j < i; j++) {
+//       row += "*";
+//     }
+//     console.log(row);
+//   }
+// }
+
+// starPattern(5);
+
+//? 2:
+
+// function starPattern2(n) {
+//   for (let i = 1; i <= n; i++) {
+//     row = "";
+//     for (let j = 0; j < i; j++) {
+//       row += "*";
+//     }
+//     console.log(row);
+//   }
+// }
+
+// starPattern2(5);
