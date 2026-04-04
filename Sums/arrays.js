@@ -232,7 +232,7 @@
 
 // patternProgram("Akash");
 
-//? By Using the "*"
+//? By Using the "*" Up
 
 // function starPattern(n) {
 //   for (let i = n; i >= 1; i--) {
@@ -246,8 +246,7 @@
 
 // starPattern(5);
 
-//? 2:
-
+//? 2:Down
 // function starPattern2(n) {
 //   for (let i = 1; i <= n; i++) {
 //     row = "";
@@ -259,3 +258,21 @@
 // }
 
 // starPattern2(5);
+
+//? 3: Triangle pattern
+
+function triangle(n) {
+  for (let i = 1; i <= n; i++) {
+    row = "";
+
+    for (let s = 1; s <= n - i; s++) {
+      row += " ";
+    }
+    for (s = 1; s <= 2 * i - 1; s++) {
+      row += "*";
+    }
+    console.log(row);
+  }
+}
+
+triangle(5);
