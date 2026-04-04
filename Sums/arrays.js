@@ -206,12 +206,27 @@
 // console.log("a:", a, "b:", b);
 
 //? B:
-let a = 30;                                            //^ other way of doing swap
-let b = 50;
 
-a = a + b;
-console.log(a);
-b = a - b;
-console.log(b);
-a = a - b;
-console.log(a);
+// let a = 30;                                 //^ other way of doing swap
+// let b = 50;
+
+// a = a + b;
+// console.log(a);
+// b = a - b;
+// console.log(b);
+// a = a - b;
+// console.log(a);
+
+//? Q8: pattern program that takes n as input and prints an alphabet pattern
+
+function patternProgram(n) {
+  for (let i = n; i >= 1; i--) {
+    row = "";
+    for (j = 0; j < i; j++) {
+      row += String.fromCharCode(97 + j);
+    }
+    console.log(row);
+  }
+}
+
+patternProgram(5);
