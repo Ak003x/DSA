@@ -261,18 +261,21 @@
 
 //? 3: Triangle pattern
 
-function triangle(n) {
-  for (let i = 1; i <= n; i++) {
-    row = "";
+// function triangle(n) {
+//   for (let i = 1; i <= n; i++) {
+//     row = "";
 
-    for (let s = 1; s <= n - i; s++) {
-      row += " ";
-    }
-    for (s = 1; s <= 2 * i - 1; s++) {
-      row += "*";
-    }
-    console.log(row);
-  }
-}
+//     for (let s = 1; s <= n - i; s++) {
+//       row += " ";
+//     }
+//     for (s = 1; s <= 2 * i - 1; s++) {
+//       row += "*";
+//     }
+//     console.log(row);
+//   }
+// }
 
-triangle(5);
+// triangle(5);
+
+//? Q:9 Find the larger number
+
