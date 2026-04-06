@@ -281,5 +281,13 @@
 
 function largerNum(n) {
   let max = 0;
-  
+  for (let i = 0; i < n; i++) {
+    if (max < n[i]) {
+      max += n[i];
+    }
+    console.log(max);
+  }
+
 }
+
+largerNum([10,20,30,40,50])
