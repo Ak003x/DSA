@@ -277,17 +277,16 @@
 
 // triangle(5);
 
-//? Q:9 Find the larger number
+//? Q9 : Find the larger number
 
 function largerNum(n) {
   let max = 0;
-  for (let i = 0; i < n; i++) {
-    if (max < n[i]) {
-      max += n[i];
+  for (let i = 0; i < n.length; i++) {
+    if (n[i] > max) {
+      max = n[i];
     }
-    console.log(max);
   }
-
+  return max;
 }
-
-largerNum([10,20,30,40,50])
+console.log(
+largerNum([10, 20, 30, 40, 50]));
