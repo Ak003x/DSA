@@ -14,12 +14,12 @@
 //? Q2: Sort the Array without using builtin functions
 
 // let arr2 = [42, 7, 95, 13, 68, 31, 84, 56, 19, 77];
-// let arr1 = [...arr2]; // & optional just to save original values  using spread if needed
+// let arr1 = [...arr2];                                                                   // & optional just to save original values  using spread if needed
 
 // for (let i = 0; i < arr1.length - 1; i++) {
 //   for (j = 0; j < arr1.length - 1 - i; j++) {
 //     if (arr1[j] > arr1[j + 1]) {
-//* if the Left num is Greater than the right num SWAP! happens
+//                                                                                           //* if the Left num is Greater than the right num SWAP! happens
 
 //       let temp = arr1[j];                                                              //* Step 1: Save left value in a temp box
 //       arr1[j] = arr1[j + 1];                                                           //* Step 2: Put right value into left position
@@ -279,14 +279,16 @@
 
 //? Q9 : Find the larger number
 
-function largerNum(n) {
-  let max = 0;
-  for (let i = 0; i < n.length; i++) {
-    if (n[i] > max) {
-      max = n[i];
-    }
-  }
-  return max;
-}
-console.log(
-largerNum([10, 20, 30, 40, 50]));
+// function largerNum(n) {
+//   let max = 0;
+//   for (let i = 0; i < n.length; i++) {
+//     if (n[i] > max) {
+//       max = n[i];
+//     }
+//   }
+//   return max;
+// }
+// console.log(
+// largerNum([10, 20, 30, 40, 50]));
+
+//? Q10:
