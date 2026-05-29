@@ -19,7 +19,7 @@
 // for (let i = 0; i < arr1.length - 1; i++) {
 //   for (j = 0; j < arr1.length - 1 - i; j++) {
 //     if (arr1[j] > arr1[j + 1]) {
-//                                                                                           //* if the Left num is Greater than the right num SWAP! happens
+//                                                                                        //* if the Left num is Greater than the right num SWAP! happens
 
 //       let temp = arr1[j];                                                              //* Step 1: Save left value in a temp box
 //       arr1[j] = arr1[j + 1];                                                           //* Step 2: Put right value into left position
@@ -292,3 +292,5 @@
 // largerNum([10, 20, 30, 40, 50]));
 
 //? Q10:
+
+
