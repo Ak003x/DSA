@@ -12,3 +12,5 @@ function Occurrences(str) {
 }
 
 console.log(Occurrences("akash"));
+
+

@@ -13,23 +13,23 @@
 
 //? Q2: Sort the Array without using builtin functions
 
-// let arr2 = [42, 7, 95, 13, 68, 31, 84, 56, 19, 77];
-// let arr1 = [...arr2];                                                                   // & optional just to save original values  using spread if needed
+let arr2 = [42, 7, 95, 13, 68, 31, 84, 56, 19, 77];
+let arr1 = [...arr2];                                                                   // & optional just to save original values  using spread if needed
 
-// for (let i = 0; i < arr1.length - 1; i++) {
-//   for (j = 0; j < arr1.length - 1 - i; j++) {
-//     if (arr1[j] > arr1[j + 1]) {
-//                                                                                        //* if the Left num is Greater than the right num SWAP! happens
+for (let i = 0; i < arr1.length - 1; i++) {
+  for (j = 0; j < arr1.length - 1 - i; j++) {
+    if (arr1[j] > arr1[j + 1]) {
+                                                                                       //* if the Left num is Greater than the right num SWAP! happens
 
-//       let temp = arr1[j];                                                              //* Step 1: Save left value in a temp box
-//       arr1[j] = arr1[j + 1];                                                           //* Step 2: Put right value into left position
-//       arr1[j + 1] = temp;                                                              //*Step 3: Put saved value into right position
-//     }
-//   }
-// }
+      let temp = arr1[j];                                                              //* Step 1: Save left value in a temp box
+      arr1[j] = arr1[j + 1];                                                           //* Step 2: Put right value into left position
+      arr1[j + 1] = temp;                                                              //*Step 3: Put saved value into right position
+    }
+  }
+}
 
 // console.log(arr2);
-// console.log(arr1);
+console.log(arr1);
 
 //? Q3: Two sums with brute force
 
@@ -180,21 +180,21 @@
 
 //? Q7: Fibonacci series
 
-// function Fibonacci(n) {
-//   let a = 0;
-//   let b = 1;
-//   let result = [a];
+function Fibonacci(n) {
+  let a = 0;
+  let b = 1;
+  let result = [a];
 
-//   for (let i = 0; i < n; i++) {
-//     result.push(b);
+  for (let i = 0; i < n; i++) {
+    result.push(b);
 
-//     let next = a + b;
-//     a = b;
-//     b = next;
-//   }
-//   return result;
-// }
-// console.log(Fibonacci(10));
+    let next = a + b;
+    a = b;
+    b = next;
+  }
+  return result;
+}
+console.log(Fibonacci(10));
 
 //? Q8: Swap two variable without using 3rd variable
 
@@ -292,5 +292,3 @@
 // largerNum([10, 20, 30, 40, 50]));
 
 //? Q10:
-
-
